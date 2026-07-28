@@ -1165,3 +1165,73 @@
   margin-top: 18px;
   max-width: 560px;
 }
+
+/* ================= TRANSPARÊNCIA — CONTADORES ================= */
+.counters{
+  background: var(--black);
+  padding: 110px 0 130px;
+}
+
+.counters-head{
+  max-width: 620px;
+  margin-bottom: 70px;
+}
+
+.counters-head h2{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 900;
+  font-size: clamp(28px, 3.2vw, 40px);
+  text-transform: uppercase;
+  letter-spacing: -0.3px;
+  margin-top: 18px;
+}
+
+.counter-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--gray-line);
+  border: 1px solid var(--gray-line);
+}
+
+.counter{
+  background: var(--black);
+  padding: 50px 40px;
+  text-align: left;
+}
+
+.counter .value{
+  font-family: 'Archivo', sans-serif;
+  font-weight: 900;
+  font-size: clamp(44px, 5vw, 64px);
+  color: var(--white);
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.counter .value .suffix{
+  color: var(--red);
+  font-size: 0.55em;
+}
+
+.counter .label{
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--gray-mid);
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+.counters-note{
+  margin-top: 28px;
+  font-size: 12.5px;
+  color: var(--gray-mid);
+  border-left: 2px solid var(--red);
+  padding-left: 14px;
+}
+
+@media (max-width: 860px){
+  .counter-grid{ grid-template-columns: 1fr; }
+}
