@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doação | Fiel Atleta</title>
+<meta name="description" content="Mude o futuro de uma criança hoje. Faça sua doação única ou apadrinhamento mensal ao Instituto Akachi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">
+      <img src="../assets/Logo Fiel Atleta.png" alt="Fiel Atleta">
+      <span class="logo-wordmark"><span class="name">Fiel Atleta</span><span class="tag">Oficial</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../quem-somos.html">Quem Somos</a></li>
+        <li><a href="../o-que-fazemos.html">O que Fazemos</a></li>
+        <li><a href="../Contato.html">Contato</a></li>
+      </ul>
+      <a href="doacao.html" class="btn-cta">Seja um apoiador</a>
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<section class="page-banner has-photo" style="background-image:url('../assets/Imagem\ teste.jpeg')">
+  <div class="wrap">
+    <div class="about-eyebrow">Seja um apoiador nessa causa</div>
+    <h1>Mude o futuro de uma criança hoje</h1>
+  </div>
+</section>
+
+<section class="donate-selector">
+  <div class="wrap">
+    <form class="donate-selector-inner" id="donateForm">
+      <div class="about-eyebrow">Comece por aqui</div>
+      <h2>Escolha o valor e a periodicidade</h2>
+
+      <div class="period-toggle" role="group" aria-label="Periodicidade da doação">
+        <button type="button" class="active" data-period="mensal">Mensal</button>
+        <button type="button" data-period="unica">Única</button>
+      </div>
+
+      <div class="value-grid" id="valueGrid">
+        <button type="button" class="value-option active" data-value="40">R$ 40,00</button>
+        <button type="button" class="value-option" data-value="82.50">R$ 82,50</button>
+        <button type="button" class="value-option" data-value="152.50">R$ 152,50</button>
+        <button type="button" class="value-option" data-value="305">R$ 305,00</button>
+      </div>
+
+      <div class="value-other" id="valueOther">
+        <button type="button" id="customValueBtn">Outro valor</button>
+        <input type="number" min="10" step="0.01" id="customValueInput" placeholder="Informe um valor a partir de R$ 10,00">
+      </div>
+
+      <p class="donate-quote" id="donateQuote">"Você planta esperança."</p>
+
+      <div class="donor-fields">
+        <div class="form-row">
+          <label for="donorName">Nome</label>
+          <input type="text" id="donorName" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="donorEmail">E-mail</label>
+          <input type="email" id="donorEmail" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="donorPhone">Telefone</label>
+          <input type="tel" id="donorPhone" name="phone" placeholder="(00) 00000-0000">
+        </div>
+      </div>
+
+      <button type="submit" class="donate-submit" id="donateSubmit">Quero fazer parte!</button>
+      <p class="donate-form-msg" id="donateMsg"></p>
+
+      <div class="donate-secure-note">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Pagamento processado com segurança pelo Mercado Pago. Nenhum dado de cartão passa pelos nossos servidores.
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="padrinhos">
+  <div class="wrap">
+    <div class="padrinhos-head">
+      <div class="about-eyebrow">Apoiadores Fiel Atleta</div>
+      <h2>Quem já faz parte</h2>
+    </div>
+    <div class="padrinhos-grid">
+      <div class="padrinho-card">
+        <div class="quote">
+          <span class="mark">&ldquo;</span>
+          <p>Gratificante poder fazer parte desse projeto lindo e da vida de uma criança, mesmo de longe. Depois que me tornei madrinha, entendi que não preciso de muito pra ajudar outras pessoas.</p>
+        </div>
+        <div class="who">Rafaela</div>
+        <div class="role">Apoiadora</div>
+      </div>
+      <div class="padrinho-card">
+        <div class="quote">
+          <span class="mark">&ldquo;</span>
+          <p>Tem sido uma experiência incrível e marcante. Como já joguei futebol de base, foi muito especial ver os meninos nessa trajetória — o Akachi usa o esporte pra levar a palavra de um jeito que faz muito sentido pra mim.</p>
+        </div>
+        <div class="who">Pedro Henrique</div>
+        <div class="role">Apoiador</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="intl-donate">
+  <div class="wrap">
+    <p>Quer ser um patrocinador e deixa visivel sua marca em nossos uniforme? <b>Fale diretamente conosco.</b></p>
+    <a href="" target="_blank" rel="noopener" class="btn-outline" style="border-color:var(--white);color:var(--white);">
+      Patrocionio
+      <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5H13M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <img src="../assets/Logo Fiel Atleta.png" alt="Fiel Atleta">
+          <span class="logo-wordmark"><span class="name">Fiel Atleta</span><span class="tag">Oficial</span></span>
+        </a>
+        <p>Talvez você não possa mudar o mundo inteiro. Mas pode mudar o mundo de uma criança. E isso muda tudo.</p>
+        <p class="cnpj">
+          CNPJ: 39.701.466/0001-50<br>
+          Rodovia José Padovam Netto, KM 06 – Ouro Verde<br>
+          Pariquera-Açu | São Paulo | CEP 11930-000
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../quem-somos.html">Quem Somos</a></li>
+          <li><a href="../o-que-fazemos.html">O que Fazemos</a></li>
+          <li><a href="../transparencia.html">Transparência</a></li>
+          <li><a href="../Contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+551131812744">(11) 3181-2744</a></li>
+          <li><a href="mailto:contato@akachi.org.br">contato@akachi.org.br</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/instituto.akachi/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2c-2.7 0-3.05.01-4.12.06-1.06.05-1.79.22-2.43.47-.66.26-1.22.6-1.77 1.16-.56.55-.9 1.11-1.16 1.77-.25.64-.42 1.37-.47 2.43C2 8.95 2 9.3 2 12s.01 3.05.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.16 1.77.55.56 1.11.9 1.77 1.16.64.25 1.37.42 2.43.47C8.95 22 9.3 22 12 22s3.05-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47.66-.26 1.22-.6 1.77-1.16.56-.55.9-1.11 1.16-1.77.25-.64.42-1.37.47-2.43.05-1.07.06-1.42.06-4.12s-.01-3.05-.06-4.12c-.05-1.06-.22-1.79-.47-2.43-.26-.66-.6-1.22-1.16-1.77-.55-.56-1.11-.9-1.77-1.16-.64-.25-1.37-.42-2.43-.47C15.05 2 14.7 2 12 2zm0 1.8c2.65 0 2.97.01 4.02.06.97.04 1.5.2 1.85.34.46.18.79.4 1.14.75.35.35.57.68.75 1.14.14.35.3.88.34 1.85.05 1.05.06 1.37.06 4.02s-.01 2.97-.06 4.02c-.04.97-.2 1.5-.34 1.85-.18.46-.4.79-.75 1.14-.35.35-.68.57-1.14.75-.35.14-.88.3-1.85.34-1.05.05-1.37.06-4.02.06s-2.97-.01-4.02-.06c-.97-.04-1.5-.2-1.85-.34-.46-.18-.79-.4-1.14-.75-.35-.35-.57-.68-.75-1.14-.14-.35-.3-.88-.34-1.85C3.8 14.97 3.8 14.65 3.8 12s.01-2.97.06-4.02c.04-.97.2-1.5.34-1.85.18-.46.4-.79.75-1.14.35-.35.68-.57 1.14-.75.35-.14.88-.3 1.85-.34C9.03 3.81 9.35 3.8 12 3.8zm0 3.06A5.14 5.14 0 1 0 12 17.14 5.14 5.14 0 0 0 12 6.86zm0 8.48a3.34 3.34 0 1 1 0-6.68 3.34 3.34 0 0 1 0 6.68zm5.34-8.68a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/98462107/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Instituto Akachi. Todos os direitos reservados.</span>
+      <span>CNPJ 39.701.466/0001-50</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const burger = document.getElementById('burgerBtn');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+</script>
+
+<script>
+  // ⚠️ Troque pela URL real do backend depois do deploy (ver README do backend)
+  const API_BASE_URL = "https://SEU-BACKEND.onrender.com";
+
+  (function(){
+    const periodButtons = document.querySelectorAll('.period-toggle button');
+    const valueButtons = document.querySelectorAll('.value-option');
+    const valueOtherWrap = document.getElementById('valueOther');
+    const customBtn = document.getElementById('customValueBtn');
+    const customInput = document.getElementById('customValueInput');
+    const quoteEl = document.getElementById('donateQuote');
+    const form = document.getElementById('donateForm');
+    const submitBtn = document.getElementById('donateSubmit');
+    const msgEl = document.getElementById('donateMsg');
+
+    const quotes = [
+      'Você planta esperança.',
+      'Você fortalece o futuro.',
+      'Você transforma uma história inteira.',
+      'Duas vidas. Um legado.'
+    ];
+
+    let selectedPeriod = 'mensal';
+    let selectedValue = 40;
+    let customMode = false;
+
+    periodButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        periodButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedPeriod = btn.dataset.period;
+      });
+    });
+
+    valueButtons.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        valueButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        valueOtherWrap.classList.remove('custom-active');
+        customMode = false;
+        selectedValue = parseFloat(btn.dataset.value);
+        quoteEl.textContent = `"${quotes[index] || quotes[0]}"`;
+      });
+    });
+
+    customBtn.addEventListener('click', () => {
+      valueButtons.forEach(b => b.classList.remove('active'));
+      valueOtherWrap.classList.add('custom-active');
+      customMode = true;
+      customInput.focus();
+      quoteEl.textContent = '"Cada valor faz diferença."';
+    });
+
+    customInput.addEventListener('input', () => {
+      selectedValue = parseFloat(customInput.value) || 0;
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      msgEl.textContent = '';
+      msgEl.classList.remove('error');
+
+      const name = document.getElementById('donorName').value.trim();
+      const email = document.getElementById('donorEmail').value.trim();
+      const phone = document.getElementById('donorPhone').value.trim();
+
+      if (customMode && (!selectedValue || selectedValue < 10)) {
+        msgEl.textContent = 'Informe um valor a partir de R$ 10,00.';
+        msgEl.classList.add('error');
+        return;
+      }
+      if (!name || !email) {
+        msgEl.textContent = 'Preencha nome e e-mail pra continuar.';
+        msgEl.classList.add('error');
+        return;
+      }
+      if (API_BASE_URL.includes('SEU-BACKEND')) {
+        msgEl.textContent = 'Backend ainda não configurado — veja o README do projeto akachi-backend.';
+        msgEl.classList.add('error');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Processando...';
+
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/donations`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name, email, phone,
+            amount: selectedValue,
+            periodicity: selectedPeriod,
+          }),
+        });
+        const data = await response.json();
+
+        if (!response.ok) throw new Error(data.error || 'Erro ao processar a doação.');
+
+        // redireciona pro checkout seguro do Mercado Pago
+        window.location.href = data.checkoutUrl;
+      } catch (err) {
+        msgEl.textContent = err.message;
+        msgEl.classList.add('error');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Quero fazer parte!';
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
