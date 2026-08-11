@@ -2,8 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 
-const donationsRouter = require('./routes/donations');
-const webhooksRouter = require('./routes/webhooks');
+const donationsRouter = require('../routes/donations');
+const webhooksRouter = require('../routes/webhooks');
 
 const app = express();
 
