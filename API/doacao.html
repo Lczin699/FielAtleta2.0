@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Doação | Fiel Atleta</title>
+<title>Doação — Fiel Atleta</title>
 <meta name="description" content="Mude o futuro de uma criança hoje. Faça sua doação única ou apadrinhamento mensal ao Instituto Akachi.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 
 <header>
   <div class="wrap header-inner">
-    <a href="index.html" class="logo">
+    <a href="../index.html" class="logo">
       <img src="../assets/Logo Fiel Atleta.png" alt="Fiel Atleta">
       <span class="logo-wordmark"><span class="name">Fiel Atleta</span><span class="tag">Oficial</span></span>
     </a>
@@ -25,7 +25,7 @@
         <li><a href="../o-que-fazemos.html">O que Fazemos</a></li>
         <li><a href="../Contato.html">Contato</a></li>
       </ul>
-      <a href="doacao.html" class="btn-cta">Seja um apoiador</a>
+      <a href="doacao.html" class="btn-cta">Seja um apoiador(a)</a>
       <button class="burger" id="burgerBtn" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
@@ -33,9 +33,9 @@
   </div>
 </header>
 
-<section class="page-banner has-photo" style="background-image:url('../assets/Imagem\ teste.jpeg')">
+<section class="page-banner has-photo" style="background-image:url('assets/page-banner-doacao.jpg')">
   <div class="wrap">
-    <div class="about-eyebrow">Seja um apoiador nessa causa</div>
+    <div class="about-eyebrow">Apadrinhe uma criança</div>
     <h1>Mude o futuro de uma criança hoje</h1>
   </div>
 </section>
@@ -94,7 +94,7 @@
 <section class="padrinhos">
   <div class="wrap">
     <div class="padrinhos-head">
-      <div class="about-eyebrow">Apoiadores Fiel Atleta</div>
+      <div class="about-eyebrow">Apoiador Fiel Atleta</div>
       <h2>Quem já faz parte</h2>
     </div>
     <div class="padrinhos-grid">
@@ -120,9 +120,9 @@
 
 <section class="intl-donate">
   <div class="wrap">
-    <p>Quer ser um patrocinador e deixa visivel sua marca em nossos uniforme? <b>Fale diretamente conosco.</b></p>
-    <a href="" target="_blank" rel="noopener" class="btn-outline" style="border-color:var(--white);color:var(--white);">
-      Patrocionio
+    <p>Deseja ser um patrocinador e sua marca esteja visivel em nossos uniformes? <b>Fale diretamente conosco</b></p>
+    <a href="#" target="_blank" rel="noopener" class="btn-outline" style="border-color:var(--white);color:var(--white);">
+      Seja um patrocinador
       <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5H13M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
   </div>
@@ -132,8 +132,8 @@
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="../index.html" class="logo">
-          <img src="../assets/Logo Fiel Atleta.png" alt="Fiel Atleta">
+        <a href="index.html" class="logo">
+          <img src="assets/logo-fiel-atleta.png" alt="Fiel Atleta">
           <span class="logo-wordmark"><span class="name">Fiel Atleta</span><span class="tag">Oficial</span></span>
         </a>
         <p>Talvez você não possa mudar o mundo inteiro. Mas pode mudar o mundo de uma criança. E isso muda tudo.</p>
@@ -182,7 +182,10 @@
 <script>
   const burger = document.getElementById('burgerBtn');
   const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  });
 </script>
 
 <script>

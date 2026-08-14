@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Transparência — Instituto Akachi</title>
+<title>Transparência — Fiel Atleta</title>
 <meta name="description" content="No Instituto Akachi, a transparência é um dos pilares fundamentais que direciona todas as nossas atividades.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
         <li><a href="o-que-fazemos.html">O que Fazemos</a></li>
         <li><a href="Contato.html">Contato</a></li>
       </ul>
-      <a href="doacao.html" target="_blank" rel="noopener" class="btn-cta">Apadrinhe</a>
+      <a href="API/doacao.html" class="btn-cta">Seja um apoiador(a)</a>
       <button class="burger" id="burgerBtn" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
@@ -33,7 +33,7 @@
   </div>
 </header>
 
-<section class="page-banner has-photo" style="background-image:url('assets/Imagem teste.jpeg')">
+<section class="page-banner has-photo" style="background-image:url('assets/page-banner-transparencia.jpg')">
   <div class="wrap">
     <div class="about-eyebrow">Transparência</div>
     <h1>Compromisso que se mostra em números</h1>
@@ -48,7 +48,7 @@
     </div>
     <div class="content-body">
       <p class="lead">
-        No Fiel Atleta, a <b>transparência é um dos pilares fundamentais</b>
+        No Fiel Atleta a <b>transparência é um dos pilares fundamentais</b>
         que direciona todas as nossas atividades.
       </p>
       <p>
@@ -99,8 +99,8 @@
       <div class="tag">Faça parte</div>
       <h2>Você não muda o mundo inteiro. Mas pode mudar o mundo de uma criança.</h2>
     </div>
-    <a href="doacao.html" target="_blank" rel="noopener" class="btn-invert">
-      Apadrinhe agora
+    <a href="API/doacao.html" class="btn-invert">
+     Seja um apoiador(a)
       <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5H13M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
   </div>
@@ -160,7 +160,10 @@
 <script>
   const burger = document.getElementById('burgerBtn');
   const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  });
 
   // Contadores animados — sobem de 0 até o valor real quando entram na tela
   (function(){

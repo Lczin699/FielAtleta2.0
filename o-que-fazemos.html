@@ -25,7 +25,7 @@
         <li><a href="o-que-fazemos.html">O que Fazemos</a></li>
         <li><a href="Contato.html">Contato</a></li>
       </ul>
-      <a href="API/doacao.html" target="_blank" rel="noopener" class="btn-cta">seja um apoiador(a)</a>
+      <a href="API/doacao.html" class="btn-cta">Seja um apoiador(a)</a>
       <button class="burger" id="burgerBtn" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
@@ -33,7 +33,7 @@
   </div>
 </header>
 
-<section class="page-banner has-photo" style="background-image:url('assets/Imagem teste.jpeg')">
+<section class="page-banner has-photo" style="background-image:url('assets/page-banner-o-que-fazemos.jpg')">
   <div class="wrap">
     <div class="about-eyebrow">O que Fazemos</div>
     <h1>Esporte, alimentação e educação como instrumentos de transformação</h1>
@@ -133,7 +133,7 @@
       <div class="tag">Seja um parceiro Fiel Atleta</div>
       <h2>Contribua com essa causa e ajude a mudar o futuro de uma criança.</h2>
     </div>
-    <a href="API/doacao.html" target="_blank" rel="noopener" class="btn-invert">
+    <a href="API/doacao.html" class="btn-invert">
       Seja um apoiador(a)
       <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5H13M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
@@ -194,7 +194,10 @@
 <script>
   const burger = document.getElementById('burgerBtn');
   const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  });
 </script>
 
 </body>

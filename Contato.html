@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contato — Fiel Atleta</title>
-<meta name="description" content="Fale com o Fiel Atleta. Telefone: (11) 3181-2744. E-mail: contato@akachi.org.br.">
+<meta name="description" content="Fale com o Instituto Akachi. Telefone: (11) 3181-2744. E-mail: contato@akachi.org.br.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
@@ -23,9 +23,9 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="quem-somos.html">Quem Somos</a></li>
         <li><a href="o-que-fazemos.html">O que Fazemos</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="Contato.html">Contato</a></li>
       </ul>
-      <a href="API/doacao.html" target="_blank" rel="noopener" class="btn-cta">Seja um apoiador(a)</a>
+      <a href="API/doacao.html" class="btn-cta">Seja um apoiador(a)</a>
       <button class="burger" id="burgerBtn" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
@@ -134,7 +134,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 Instituto Akachi. Todos os direitos reservados.</span>
+      <span>© 2026 Fiel Atleta. Todos os direitos reservados.</span>
       <span>CNPJ 39.701.466/0001-50</span>
     </div>
   </div>
@@ -143,7 +143,10 @@
 <script>
   const burger = document.getElementById('burgerBtn');
   const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  });
 </script>
 
 </body>

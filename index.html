@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fiel Atleta — Sementes para o discipulado das nações</title>
+<title>Instituto Akachi — Sementes para o discipulado das nações</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
         <li><a href="o-que-fazemos.html">O que Fazemos</a></li>
         <li><a href="Contato.html">Contato</a></li>
       </ul>
-      <a href="API/doacao.html" target="_blank" rel="noopener" class="btn-cta">Seja um apoiador(a)</a>
+      <a href="API/doacao.html" class="btn-cta">Seja um apoiador(a)</a>
       <button class="burger" id="burgerBtn" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
@@ -34,10 +34,10 @@
 
 <section class="hero">
   <div class="hero-slides">
-    <div class="hero-slide active" style="background-image:url('assets/Imagem teste.jpeg')"></div>
-    <div class="hero-slide" style="background-image:url('assets/Imagem teste 2.jpeg')"></div>
-    <div class="hero-slide" style="background-image:url('assets/Imagem teste 3.jpeg')"></div>
-    <div class="hero-slide" style="background-image:url('assets/Imagem teste 4.jpg')"></div>
+    <div class="hero-slide active" style="background-image:url('assets/Imagem\ teste.jpeg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/Imagem\ teste\ 2.jpeg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/Imagem\ teste\ 3.jpeg')"></div>
+    <div class="hero-slide" style="background-image:url('assets/Imagem\ teste\ 4.jpg')"></div>
   </div>
   <div class="hero-overlay"></div>
 
@@ -195,7 +195,7 @@
       <div class="tag">Faça parte</div>
       <h2>Você não muda o mundo inteiro. Mas pode mudar o mundo de uma criança.</h2>
     </div>
-    <a href="API/doacao.html" target="_blank" rel="noopener" class="btn-invert">
+    <a href="API/doacao.html" class="btn-invert">
       Seja um apoiador(a)
       <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 5H13M13 5L9 1M13 5L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
@@ -265,7 +265,7 @@
     </div>
 
     <div class="footer-bottom">
-      <span>© 2026 Fiel Atleta. Todos os direitos reservados.</span>
+      <span>© 2026 Instituto Akachi. Todos os direitos reservados.</span>
       <span>CNPJ 39.701.466/0001-50</span>
     </div>
   </div>
@@ -274,7 +274,10 @@
 <script>
   const burger = document.getElementById('burgerBtn');
   const navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  burger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  });
 
   // Carrossel do Hero — troca lenta e automática de fotos
   (function(){
